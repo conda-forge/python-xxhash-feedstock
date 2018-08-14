@@ -12,14 +12,15 @@ source:
   url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.zip
 
 build:
-  number: 0
+  number: 1
   script:
     - python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - toolchain
     - msinttypes  # [win and py<35]
     - pip
   run:
