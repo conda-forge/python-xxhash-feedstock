@@ -9,7 +9,7 @@ package:
 
 source:
   sha256: {{ sha256 }}
-  url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
   number: 1001
