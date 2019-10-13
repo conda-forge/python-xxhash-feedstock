@@ -1,5 +1,5 @@
-{% set version = "1.4.1" %}
-{% set sha256 = "6b5af8c37ff12745ae77f28e695c0d3a3327932fd229824e49382377e940fdf1" %}
+{% set version = "1.4.2" %}
+{% set sha256 = "82cdc67b41da904aa2921107e9877814079d9b067a99f19852b5d85e8a40555d" %}
 {% set pip_name = 'xxhash' %}
 {% set name = 'python-xxhash' %}
 
