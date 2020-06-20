@@ -1,7 +1,7 @@
-{% set version = "1.4.3" %}
-{% set sha256 = "8b6b1afe7731d7d9cbb0398b4a811ebb5e6be5c174f72c68abf81f919a435de9" %}
-{% set pip_name = 'xxhash' %}
-{% set name = 'python-xxhash' %}
+{% set version = "1.4.4" %}
+{% set sha256 = "7d6df9d217977d085b8abd74b61efa40405ac416f2d8bdacc40826bd5cb1b746" %}
+{% set pip_name = "xxhash" %}
+{% set name = "python-xxhash" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
-  number: 1
+  number: 0
   script:
     - python -m pip install --no-deps --ignore-installed .
 
@@ -37,7 +37,7 @@ about:
   home: https://github.com/ifduyue/python-xxhash
   license: BSD-2-Clause
   license_file: LICENSE
-  summary: 'Python binding for xxHash'
+  summary: Python binding for xxHash
   license_family: BSD
 
 extra:
