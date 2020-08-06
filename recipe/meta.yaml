@@ -14,7 +14,9 @@ source:
 build:
   number: 0
   script:
-    - python -m pip install --no-deps --ignore-installed .
+    - export XXHASH_LINK_SO=1  # [unix]
+    - SET XXHASH_LINK_SO=1  # [win]
+    - {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
@@ -30,8 +32,11 @@ test:
   imports:
     - xxhash
   commands:
+    - pip check
     - conda inspect linkages {{ name|lower }}  # [unix]
     - conda inspect objects {{ name|lower }}   # [osx]
+  requires:
+    - pip
 
 about:
   home: https://github.com/ifduyue/python-xxhash
