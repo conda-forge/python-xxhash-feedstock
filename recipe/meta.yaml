@@ -20,6 +20,8 @@ build:
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
@@ -35,8 +37,6 @@ test:
     - xxhash
   commands:
     - pip check
-    - conda inspect linkages {{ name|lower }}  # [unix]
-    - conda inspect objects {{ name|lower }}   # [osx]
   requires:
     - pip
 
