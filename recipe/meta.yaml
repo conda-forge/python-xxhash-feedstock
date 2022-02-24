@@ -1,5 +1,5 @@
-{% set version = "2.0.2" %}
-{% set sha256 = "b7bead8cf6210eadf9cecf356e17af794f57c0939a3d420a00d87ea652f87b49" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "30b2d97aaf11fb122023f6b44ebb97c6955e9e00d7461a96415ca030b5ceb9c7" %}
 {% set pip_name = "xxhash" %}
 {% set name = "python-xxhash" %}
 
@@ -12,7 +12,7 @@ source:
   url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
-  number: 1
+  number: 0
   script:
     - export XXHASH_LINK_SO=1  # [unix]
     - SET XXHASH_LINK_SO=1  # [win]
