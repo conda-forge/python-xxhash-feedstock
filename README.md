@@ -1,11 +1,11 @@
-About python-xxhash
-===================
+About python-xxhash-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-xxhash-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ifduyue/python-xxhash
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-xxhash-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python binding for xxHash
 
@@ -393,5 +393,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jjerphan](https://github.com/jjerphan/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 
