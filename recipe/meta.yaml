@@ -1,5 +1,5 @@
-{% set version = "3.4.1" %}
-{% set sha256 = "0379d6cf1ff987cd421609a264ce025e74f346e3e145dd106c0cc2e3ec3f99a9" %}
+{% set version = "3.5.0" %}
+{% set sha256 = "84f2caddf951c9cbf8dc2e22a89d4ccf5d86391ac6418fe81e3c67d0cf60b45f" %}
 {% set pip_name = "xxhash" %}
 {% set name = "python-xxhash" %}
 
@@ -23,6 +23,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - msinttypes  # [win and py<35]
