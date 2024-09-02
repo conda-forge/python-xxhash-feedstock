@@ -1,5 +1,4 @@
 {% set version = "3.5.0" %}
-{% set sha256 = "84f2caddf951c9cbf8dc2e22a89d4ccf5d86391ac6418fe81e3c67d0cf60b45f" %}
 {% set pip_name = "xxhash" %}
 {% set name = "python-xxhash" %}
 
@@ -8,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  sha256: {{ sha256 }}
+  sha256: 84f2caddf951c9cbf8dc2e22a89d4ccf5d86391ac6418fe81e3c67d0cf60b45f
   url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
-  number: 0
+  number: 1
   script:
     - export XXHASH_LINK_SO=1  # [unix]
     - SET XXHASH_LINK_SO=1  # [win]
@@ -26,6 +25,7 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
+    - setuptools >=63
     - msinttypes  # [win and py<35]
     - pip
     - xxhash
