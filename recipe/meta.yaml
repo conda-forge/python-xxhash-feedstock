@@ -8,10 +8,10 @@ package:
 
 source:
   sha256: 84f2caddf951c9cbf8dc2e22a89d4ccf5d86391ac6418fe81e3c67d0cf60b45f
-  url: https://pypi.io/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
-  number: 2
+  number: 3
   script:
     - export XXHASH_LINK_SO=1  # [unix]
     - SET XXHASH_LINK_SO=1  # [win]
