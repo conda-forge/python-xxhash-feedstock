@@ -1,4 +1,4 @@
-{% set version = "3.7.0" %}
+{% set version = "3.8.1" %}
 {% set pip_name = "xxhash" %}
 {% set name = "python-xxhash" %}
 
@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  sha256: 6cc4eefbb542a5d6ffd6d70ea9c502957c925e800f998c5630ecc809d6702bae
+  sha256: b0de4bf3aa66363552d52c6a89003c479911f12098cd48a53d44a0f7a25f7c46
   url: https://pypi.org/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
