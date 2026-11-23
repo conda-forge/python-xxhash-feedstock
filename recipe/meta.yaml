@@ -1,14 +1,12 @@
 {% set version = "4.1.0" %}
-{% set pip_name = "xxhash" %}
-{% set name = "python-xxhash" %}
 
 package:
-  name: {{ name|lower }}
+  name: python-xxhash
   version: {{ version }}
 
 source:
   sha256: c9b288e4c1f5dae54417bc8a05e6f6daf505783d916b4783f4dd2f2e7d5db486
-  url: https://files.pythonhosted.org/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/x/xxhash/xxhash-{{ version }}.tar.gz
 
 build:
   number: 0
